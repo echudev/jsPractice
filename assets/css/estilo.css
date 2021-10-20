@@ -1,0 +1,80 @@
+body{
+    background-image: url(https://www.cursophp.foxit.com.ar/comision2164/ezequiel%20maranda/ejerciciosJs/assets/img/blue.jpg);
+    background-position:center center;
+    background-size:cover;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.157);
+    border:solid 1px rgba(255, 255, 255, 0.096);
+    backdrop-filter: blur(2px);
+}
+.glass-cont{
+    color:rgba(255, 255, 255, 0.904);
+    background-color: rgba(255, 255, 255, 0.096);
+    box-shadow:0 10px 20px 5px rgb(0, 0, 0,0.5);
+    backdrop-filter: blur(50px);/* backfrop-filter funciona como filter, pero solo para el background*/
+    border:solid 1px rgba(255, 255, 255, 0.123);
+    border-radius:10px;
+    margin:4% 1%;
+    transition:0.3s ease-in-out;
+}
+.glass-cont:hover{
+   box-shadow:0 10px 20px 5px rgba(250, 250, 250, 0.5);
+  transition:0.3s ease-in-out;
+}
+.glass-cont:hover ul{
+    text-shadow:1px 1px 2px rgba(216, 230, 255, 0.5);
+}
+.glass-cont:active{
+    box-shadow:0 10px 20px 5px rgba(250, 250, 250, 0.5);
+    transform:scale(0.98);
+}
+.noselec{
+    user-select:none;
+}
+.footer{/*La mejor forma de mantener el footer abajo siempre. Pones display:flex al Body, y al futer margin-top:auto*/
+    background-color: rgba(0, 0, 0, 0.418);
+    backdrop-filter: blur(0px);
+    min-height:80px;
+    width:100%;
+    margin-top:auto;
+    display:flex;
+    justify-content:space-evenly;
+}
+.futlink{
+    max-width:400px;
+    min-width:50px;
+    text-decoration:none;
+    color:rgba(255, 255, 255, 0.904);
+    user-select:none;
+    display:flex;
+    flex-direction:column;
+}
+.futlink2{
+    max-width:400px;
+    min-width:50px;
+    text-decoration:none;
+    color:rgba(255, 255, 255, 0.904);
+    user-select:none;
+    display:flex;
+    flex-direction:column;
+}
+.fut-cont{
+    min-width:120px;
+    margin:0px 20px;
+}
+.futlink2:hover{
+    color:rgb(255, 255, 255);
+    text-shadow:1px 1px 5px rgb(160, 206, 245);
+}
+a{
+    text-decoration:none;
+}
+
+#intro, #dolar, #cuadrado{
+    cursor:pointer;
+}

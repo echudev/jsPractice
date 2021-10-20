@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--mis estilos-->
+    <link href="assets/css/estilo.css" rel="stylesheet" type="text/css">
+    <title>Javascrip basics</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light">
+            <div class="container-fluid d-flex justify-content-start">
+                <img id="imgnav" src="assets/img/codoacodo.png" alt="" width="100" height="auto">
+                <span id="titulonav" class="navbar-brand mb-0 h1 text-white ms-3">Ejercicios Javascript</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container content">
+        <div class="row d-flex justify-content-center">
+
+            <div onclick="window.open('promedio.html','mywindow');" id="intro"
+                class="col-10 col-lg-3 glass-cont d-flex flex-column">
+                <h4 class="text-center noselec mt-2">Calcula el promedio de 3 notas</h4>
+                <ul class="noselec">
+                    <li>Si la nota es menor que 4 reprobas la cursada</li>
+                    <li>Si la nota es mayor que 4 Aprobas la cursada</li>
+                    <li>Si la nota es mayor que 7 promocionas la cursada</li>
+                </ul>
+            </div>
+
+            <div onclick="window.open('dolar.html','mywindow');" id="dolar"
+                class="col-5 col-lg-3 glass-cont d-flex flex-column">
+                <h4 class="text-center noselec mt-2">Precio Dolar</h4>
+                <p class="noselec">Ingresa un monto en pesos argentinos y devuelve el valor en:</p>
+                <ul class="noselec">
+                    <li>Dolar Oficial</li>
+                    <li>Dolar Blue</li>
+                    <li>Dolar Turista</li>
+                </ul>
+            </div>
+
+            <div onclick="window.open('cuadrado.html','mywindow');" id="cuadrado"
+                class="col-5 col-lg-3 glass-cont d-flex flex-column">
+                <h4 class="text-center noselec mt-2">Geometría</h4>
+                <p class="noselec">Ingresa el lado de un cuadrado y devuelve:</p>
+                <ul class="noselec">
+                    <li>El perímetro del cuadrado</li>
+                    <li>La Superficie del cuadrado</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="fut-cont mt-2 text-white">
+            <p class="futlink p-0 m-0">Desarrollado por Ezequiel Maranda®</p>
+            <p class="futlink p-0 m-0">CodoaCodo- PHP Fullstack</p>
+        </div>
+        <div class="fut-cont mt-2 text-white">
+            <div><i class="bi bi-github d-inline"></i><a class="futlink2 m-2 p-1 d-inline" href="">Github</a></div>
+            <div><i class="bi bi-twitter"></i><a class="futlink2 m-2 p-1 d-inline" href="">Twitter</a></div>
+            <div><i class="bi bi-linkedin"></i><a class="futlink2 m-2 p-1 d-inline" href="">LinkedIn</a></div>
+            <div><i class="bi bi-envelope"></i><a class="futlink2 m-2 p-1 d-inline" href="">Mail</a></div>
+        </div>
+    </footer>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
